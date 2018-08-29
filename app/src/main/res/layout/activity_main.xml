@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- Header aligned to top -->
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background_gradient"
+        android:gravity="right" >
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_searchbar"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+    <!-- Header aligned to bottom -->
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/background_gradient"
+        android:weightSum="3" >
+
+        <ImageButton
+            android:id="@+id/btn_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/ic_user" />
+
+        <ImageButton
+            android:id="@+id/btn_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/ic_home" />
+
+        <ImageButton
+            android:id="@+id/btn_logout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/ic_search" />
+    </LinearLayout>
+    <!-- TbleLayout aligned to centre -->
+
+    <TableLayout
+        android:id="@+id/tl_cat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true" >
+
+        <TableRow
+            android:id="@+id/tr_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btn_cat1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/ic_launcher"
+                android:text="Electronics" />
+
+            <Button
+                android:id="@+id/btn_cat2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/ic_launcher"
+                android:text="Cars" />
+
+            <Button
+                android:id="@+id/btn_cat3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/ic_launcher"
+                android:text="Fashion" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tr_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btn_cat4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/ic_launcher"
+                android:text="Shoes" />
+
+            <Button
+                android:id="@+id/btn_cat5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/ic_launcher"
+                android:text="Mobiles" />
+
+            <Button
+                android:id="@+id/btn_cat6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/ic_launcher"
+                android:text="Books" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
