@@ -24,7 +24,7 @@ public class MyProfileActivityVendor extends AppCompatActivity {
         setContentView(R.layout.layout_my_profile_activity_vendor);
 
         listView =(ListView)findViewById(R.id.lv_ven_profile);
-        String []content={"Add Product","My Product","Edit My Profile","LogOut"};
+        String []content={"Add Product","My Products","Edit My Profile","LogOut"};
         Adapter adapter = new Adapter(this, content);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

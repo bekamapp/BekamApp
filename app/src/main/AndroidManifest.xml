@@ -19,14 +19,15 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".LoginActivity"/>
-        <activity android:name=".Vendor.SignUpActivityVendor" />
-        <activity android:name=".User.SignUpActivityUser" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".Vendor.VendorInfoActivity"/>
+        <activity android:name=".SignUpActivity" />
         <activity android:name=".Vendor.AddProductActivity" />
         <activity android:name=".Vendor.MyProductsActivity" />
-        <activity android:name=".Vendor.MyProfileActivityVendor"/>
+        <activity android:name=".Vendor.MyProfileActivityVendor" />
         <activity android:name=".User.MyProfileActivityUser" />
-        <activity android:name=".User.ItemDetailsActivity"/>
+        <activity android:name=".User.ItemDetailsActivity" />
+        <activity android:name=".ReviewsActivity"></activity>
     </application>
 
 </manifest>

@@ -9,8 +9,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.bekamapp.User.SignUpActivityUser;
-import com.bekamapp.Vendor.SignUpActivityVendor;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -19,7 +17,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class LoginActivity extends AppCompatActivity {
 
     EditText email, password;
-    Button login, signUp_User, signUp_Vendor;
+    Button login, signUp;
     FirebaseAuth auth;
 
     @Override
@@ -38,21 +36,12 @@ public class LoginActivity extends AppCompatActivity {
         email = findViewById(R.id.et_email);
         password = findViewById(R.id.et_password);
 
-        signUp_User = findViewById(R.id.btn_register_user);
-        signUp_Vendor = findViewById(R.id.btn_register_vendor);
+        signUp = findViewById(R.id.btn_signUp);
         login = findViewById(R.id.btn_login);
 
-        signUp_User.setOnClickListener(new View.OnClickListener() {
+        signUp.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                startActivity(new Intent(LoginActivity.this, SignUpActivityUser.class));
-                finish();
-            }
-        });
-
-        signUp_Vendor.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(LoginActivity.this, SignUpActivityVendor.class));
+                startActivity(new Intent(LoginActivity.this, SignUpActivity.class));
                 finish();
             }
         });

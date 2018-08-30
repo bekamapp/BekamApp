@@ -13,7 +13,7 @@
         android:layout_marginBottom="10dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="30dp"
         android:gravity="center_horizontal"
         android:text="Please login!"
         android:textColor="#FAFAFA"
@@ -26,7 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="30dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         >
@@ -91,10 +91,10 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="48dp"
         android:gravity="center"
         android:fontFamily="sans-serif"
-        android:background="#4DB6AC"
+        android:background="#0b8793"
         android:textColor="#FFFFFF"
         android:text="Login"
         android:textStyle="bold"/>
@@ -122,7 +122,7 @@
 
 
         <Button
-            android:id="@+id/btn_register_user"
+            android:id="@+id/btn_signUp"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="20dp"
@@ -130,7 +130,7 @@
             android:layout_marginTop="20dp"
             android:layout_weight=".5"
             android:gravity="center"
-            android:text="@string/signup_customer"
+            android:text="SignUp"
             android:singleLine="false"
             android:fontFamily="sans-serif"
             android:textAllCaps="false"
@@ -138,23 +138,6 @@
             android:textColor="#FFFFFF"
             android:textStyle="bold" />
 
-
-        <Button
-            android:id="@+id/btn_register_vendor"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_weight=".5"
-            android:singleLine="false"
-            android:fontFamily="sans-serif"
-            android:background="#0b8793"
-            android:textColor="#FFFFFF"
-            android:gravity="center"
-            android:text="@string/signup_vendor"
-            android:textAllCaps="false"
-            android:textStyle="bold" />
 
     </LinearLayout>
 </LinearLayout>

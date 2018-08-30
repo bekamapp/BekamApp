@@ -11,10 +11,14 @@ import com.bekamapp.User.ItemDetailsActivity;
 import com.bekamapp.User.MyProfileActivityUser;
 import com.bekamapp.Vendor.MyProfileActivityVendor;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
 
     FirebaseAuth auth;
+    FirebaseDatabase database;
+    DatabaseReference reference;
     ImageButton logout, home, account;
     Button cat5;
     
