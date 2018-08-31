@@ -1,11 +1,14 @@
 package com.bekamapp.Vendor;
 
+import com.bekamapp.WorkingHours;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class VendorDataFirebase {
-    private String name, phone, location, workingHours;
+    private String name, phone, location;
     private List<String> categories;
+    private WorkingHours workingHours;
 
     public String getName() {
         return name;
@@ -19,7 +22,7 @@ public class VendorDataFirebase {
         return location;
     }
 
-    public String getWorkingHours() {
+    public WorkingHours getWorkingHours() {
         return workingHours;
     }
 
@@ -35,8 +38,11 @@ public class VendorDataFirebase {
         this.location = location;
     }
 
-    public void setWorkingHours(String workingHours) {
-        this.workingHours = workingHours;
+    public void setWorkingHours(List<String> days, String from, String to) {
+        this.workingHours = new WorkingHours();
+        this.workingHours.setWorkingDays(days);
+        this.workingHours.setFrom(from);
+        this.workingHours.setTo(to);
     }
 
     public List<String> getCategories() {

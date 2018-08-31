@@ -82,7 +82,6 @@
                     android:layout_weight=".1"
                     android:layout_height="wrap_content"
                     android:spinnerMode="dropdown"/>
-                    <!--android:background="@android:drawable/btn_dropdown"-->
 
                 <TextView
                     android:layout_width="0dp"
